@@ -1,0 +1,16 @@
+# spring:
+#    # 数据库连接
+#    datasource:
+#            driverClassName: com.mysql.cj.jdbc.Driver
+#            url: jdbc:mysql://mysql-cdb-989.sql.tencentcdb.com:63156/scf?serverTimezone=Asia/Shanghai&autoReconnect=true&autoReconnectForPools=true&useUnicode=true&characterEncoding=UTF-8
+#            user: root
+#            password: root
+#            maxPoolSize: 30
+#            minMinPoolSize: 1
+#            maxLifetime: 3000
+#            borrowConnectionTimeout: 60
+#            maxIdleTime: 60
+#            testQuery: SELECT 1
+feign:
+  hystrix:
+    enabled: true
